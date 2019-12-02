@@ -1,0 +1,22 @@
+
+    .search{
+        text-align: center;
+        display: flex;
+        line-height: 60px;
+        background:rgb(242,242,242);
+        border-radius: 30px;
+        width:95%;
+        margin: 0 auto;
+        i{
+            padding:0 20px;
+        }
+        input{
+            height:60px;
+            flex:1;
+            border:none;
+            text-align: left;
+            text-indent: 10px;
+            background: transparent;
+        }
+               
+    }

@@ -1,0 +1,30 @@
+.header{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    height:90px;
+    line-height: 90px;
+    background:#fff;
+    i{
+        font-size: 40px;
+        color:#aaa;
+        position: absolute;
+        padding:0 30px;
+        display: block;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .iconback{
+        left:10px;
+    }
+    .iconmore{
+        right:10px;
+    }
+    h2{
+        font-size: 36px;
+        text-align: center;
+        color:#555;
+    }
+
+}

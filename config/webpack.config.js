@@ -114,7 +114,7 @@ module.exports = function(webpackEnv) {
             // which in turn let's users customize the target behavior as per their needs.
             postcssNormalize(),
             require('postcss-pxtorem')({
-              rootValue : 100,
+              rootValue : 32,
               selectorBlackList  : [], //过滤
               propList   : ['*'],
             })            
@@ -320,6 +320,8 @@ module.exports = function(webpackEnv) {
         message: path.resolve(__dirname, '../src/pages/message'),
         mine: path.resolve(__dirname, '../src/pages/mine'),
         moments: path.resolve(__dirname, '../src/pages/moments'),
+        components:path.resolve(__dirname, '../src/components'),
+        services:path.resolve(__dirname, '../src/services'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

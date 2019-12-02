@@ -1,0 +1,58 @@
+$color:rgb(0,204,153);
+#message{
+    .message-top{
+        width: 100%;
+        padding:20px;
+        box-sizing: border-box;
+        &-one{
+            font-size: 26px;
+            color:#aaa;
+            span{
+                padding-right:20px;
+            }
+        }
+        &-two{
+            position: relative;
+            padding:30px 0;
+            h1{
+                font-size: 60px;
+                color:#666;
+            }
+            .scan{
+                position: absolute;
+                top:50%;
+                right:20px;
+                transform: translateY(-50%);
+                i{
+                    font-size: 40px;
+                    color:$color;
+                }
+            }
+           
+        }
+        
+    }
+    .search{
+        text-align: center;
+        display: flex;
+        line-height: 60px;
+        background:rgb(242,242,242);
+        border-radius: 30px;
+        width:95%;
+        margin: 0 auto;
+        i{
+            padding:0 20px;
+        }
+        input{
+            
+            height:60px;
+            flex:1;
+            border:none;
+            text-align: left;
+            text-indent: 10px;
+            background: transparent;
+        }
+               
+    }
+    
+}
