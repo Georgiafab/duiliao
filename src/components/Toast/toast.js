@@ -32,7 +32,7 @@ class toast extends React.Component {
         this.timer=setTimeout(()=>{
           this.setState({
             show:'none'
-          })
+          });
         },3000);
       })
     }

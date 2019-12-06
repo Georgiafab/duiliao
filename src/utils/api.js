@@ -65,6 +65,20 @@ const IS_FRIEND_API = HOST+'/api/friend/isfriend';
 */
 const FRIEND_LIST_API = HOST+'/api/friend/find_friend_by_user';
 
+
+/*
+开始聊天，请求聊天记录
+参数：_id, friend_id
+*/
+const START_CHAT_API=HOST+'/api/message/start_chat';
+
+
+/*
+结束聊天，保存聊天记录
+参数：_id, friend_id
+*/
+const END_CHAT_API=HOST+'/api/message/end_chat';
+
 export default {
     REGIESTER_API,
     LOGIN_API,
@@ -74,5 +88,7 @@ export default {
     FIND_FRIEND_BY__id_API,
     ADD_FRIEND_API,
     IS_FRIEND_API,
-    FRIEND_LIST_API
+    FRIEND_LIST_API,
+    START_CHAT_API,
+    END_CHAT_API
 }

@@ -81,7 +81,6 @@ constructor(props) {
         const result=await requestIsFriend({
             friend_id:this.state._id
         });
-        console.log(result);
         if(result.data.length){
             this.setState({
                 isfriend:true
@@ -90,7 +89,7 @@ constructor(props) {
         
     }
     toSendMessAction(){
-
+        this.props.history.push('/chat/'+this.state._id);
     }
 
     componentDidMount(){

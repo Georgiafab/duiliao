@@ -81,6 +81,8 @@ class user extends React.Component {
       id: ""
     });
 
+
+
     //获取所有好友的ID
     let friendArr = [];
     result.map(item => {

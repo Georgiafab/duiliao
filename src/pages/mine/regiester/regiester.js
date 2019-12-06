@@ -42,7 +42,7 @@ constructor(props) {
                 </ul>
             </div>
             <div className="reg-ps"> 
-                <div className="reg-p p1" style={{display:status==0?'block':'none'}}>
+                <div className="reg-p p1" style={{display:status===0?'block':'none'}}>
                     <label>
                         <i className="iconfont icon-wode"></i>
                         <input type="text" name="id" placeholder="终端ID" ref={(inpa)=>{
@@ -57,7 +57,7 @@ constructor(props) {
                     </label>
                     <p>翻看终端背后的ID与SN码，必须正确无误</p>
                 </div>
-                <div className="reg-p p2" style={{display:status==1?'block':'none'}}>
+                <div className="reg-p p2" style={{display:status===1?'block':'none'}}>
                     <label>
                         <i className="iconfont icon-wode"></i>
                         <input type="text" name="name" placeholder="设置昵称" ref={(inpc)=>{
@@ -72,7 +72,7 @@ constructor(props) {
                     </label>
                     <p>昵称须唯一且不能修改</p>
                 </div>
-                <div className="reg-p p3" style={{display:status==2?'block':'none'}} >
+                <div className="reg-p p3" style={{display:status===2?'block':'none'}} >
                    <div className="sucess">
                        <i className="iconfont icon-wancheng"></i>
                        <p>绑定成功</p>
@@ -94,7 +94,7 @@ constructor(props) {
             this.props.history.push('./login');
         }
         else{
-            if(this.state.status==0){
+            if(this.state.status===0){
                 // console.log(0);
                 if(!this.inpa.value||!this.inpb.value){
                     this.setState({
@@ -106,7 +106,7 @@ constructor(props) {
                     return;
                 }
                 this.changeStatus()
-            }else if(this.state.status==1){
+            }else if(this.state.status===1){
                 // console.log(1);
                 if(!this.inpc.value||!this.inpd.value){
                     this.setState({

@@ -73,8 +73,13 @@ class login extends React.Component {
         toastVal: "登录成功"
       });
       localStorage.setItem('ISLOGIN','true');
+      localStorage.setItem('userInfo',JSON.stringify({
+        _id:result.data._id,
+        name:result.data.name,
+        id:result.data.id,
+      }))
       //设置cookie
-      document.cookie=`user_id=${result.data}`;
+      document.cookie=`user_id=${result.data._id}`;
       // document.cookie=`user_name=${this.name.value}`;
       this.props.history.push("/");
     } else {

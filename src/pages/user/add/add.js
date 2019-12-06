@@ -31,7 +31,7 @@ class add extends React.Component {
       <div className="page-wrap">
         <Header title={"添加好友"} hasmore={true} {...this.props} />
         <div className="page subpage" id="add">
-          <div className="search">
+          <div className="add_search">
             <i className="iconfont icon-sousuo"></i>
             <input
               type="text"
@@ -56,7 +56,6 @@ class add extends React.Component {
     // console.log(ev.keyCode)
     if(ev.keyCode===13){
         this.initSearchData(this.inp.value);
-        
     }
 
   }

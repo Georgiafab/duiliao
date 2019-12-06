@@ -1,3 +1,117 @@
-.chat{
+$color:rgb(0,204,153);
+#chat {
+  width: 100%;
+  height: 100%;
+  background: rgb(242, 242, 242);
+  bottom: 0;
+  z-index: 99;
+  .app-scroll {
+    top: 96px;
+    bottom: 100px;
+  }
+  .content {
+    top: 0;
+  }
+
+  .name {
+    width: 100%;
+    padding: 20px;
+    font-size: 40px;
+    background: #fff;
+    color: #666;
+  }
+
+  .talk-box {
+    width: 100%;
+    .time{
+      text-align: center;
+      span{
+        display: inline-block;
+        font-size: 26px;
+        text-align: center;
+        line-height:50px;
+        height: 50px;
+        width:150px;
+        background:#fefefe;
+        border-radius: 40px;
+      }
+    }
     
+    li {
+      overflow: hidden;
+      margin-top: 32px;
+      padding: 30px;
+      width:100%;
+      .info {
+        width: 120px;
+        vertical-align: middle;
+        text-align: center;
+        span{
+          display: block;
+          font-size: 30px;
+        }
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    }
+    
+    .left {
+      float: left;
+      .info {
+        left: 20px;
+        float: left;
+      }
+      p {
+        background-color: #fff;
+        padding: 20px 50px;
+        border-radius: 60px 70px 70px 10px;
+        font-size: 30px;
+        float: left;
+        color:#333;
+      }
+    }
+    .right {
+      float: right;
+      .info {
+        right: 20px;
+        float: right;
+      }
+      p {
+        background-color: $color;
+        padding: 20px 50px;
+        border-radius: 60px 70px 10px 70px;
+        font-size: 30px;
+        float: right;
+        color:#fff;
+      }
+    }
+  }
+
+  .sendbar {
+    display: flex;
+    background: #fff;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    .iconfont {
+      font-size: 44px;
+      padding: 2px 20px;
+      color: #ccc;
+    }
+    input {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-indent: 30px;
+      flex: 1;
+      color: #888;
+    }
+  }
 }
